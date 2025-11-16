@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayson Llanes | Computer Science Graduate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='#home'">Jayson</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="subtitle">Hello, I'm</div>
+                <h1>Jayson Llanes</h1>
+                <div class="role">Computer Science Graduate</div>
+                <p style="color: var(--text-dim); margin-bottom: 2rem;">
+                    Passionate about hardware troubleshooting, PC building, and web development. 
+                    Ready to apply my technical skills in innovative projects.
+                </p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="social-links">
+                    <div class="social-icon" onclick="window.open('https://www.freecodecamp.org/JAYSON009', '_blank')">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 11c0 .3-.1.6-.2.8l-.1.2v.1c-.1.2-.2.3-.4.5-.1.1-.2.2-.4.2-.1.1-.3.1-.5.2h-.2c-.2.1-.5.1-.7.1H13v2h2c.6 0 1.2-.1 1.7-.3.5-.2 1-.5 1.4-.9.4-.4.7-.8.9-1.3.2-.5.3-1 .3-1.6 0-.5-.1-1.1-.3-1.6-.2-.5-.5-.9-.9-1.3-.4-.4-.8-.7-1.4-.9-.5-.2-1.1-.3-1.7-.3H13v2h2.1c.2 0 .5 0 .7.1h.2c.2 0 .3.1.5.2.1.1.3.1.4.2.1.1.3.3.4.5v.1l.1.2c0 .2.1.5.1.8zm-7-2H9v2h1.5c.3 0 .5 0 .7-.1h.2c.2 0 .3-.1.5-.2.1-.1.3-.1.4-.2.1-.1.3-.3.4-.5v-.1l.1-.2c0-.2.1-.5.1-.8 0-.3-.1-.6-.2-.8l-.1-.2v-.1c-.1-.2-.2-.3-.4-.5-.1-.1-.2-.2-.4-.2-.1-.1-.3-.1-.5-.2h-.2c-.2 0-.5-.1-.7-.1H9V7h1.5c.6 0 1.2.1 1.7.3.5.2 1 .5 1.4.9.4.4.7.8.9 1.3.2.5.3 1 .3 1.6 0 .5-.1 1.1-.3 1.6-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.4.9-.5.2-1.1.3-1.7.3H9v-2h1.5c.2 0 .5 0 .7-.1h.2c.2 0 .3-.1.5-.2.1-.1.3-.1.4-.2.1-.1.3-.3.4-.5v-.1l.1-.2c.1-.2.2-.5.2-.8s-.1-.6-.2-.8l-.1-.2v-.1c-.1-.2-.2-.3-.4-.5-.1-.1-.2-.2-.4-.2-.1-.1-.3-.1-.5-.2h-.2c-.2-.1-.4-.1-.7-.1z"/></svg>
+                    </div>
+                    <div class="social-icon" onclick="window.open('https://github.com/jayjay009', '_blank')">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                    </div>
+                    <div class="social-icon" onclick="window.open('https://www.facebook.com/profile.php?id=100037843673162', '_blank')">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-inner">
+                        <div class="placeholder-avatar">JL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <div class="section-header">
+            <div class="section-subtitle">Get to Know More</div>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-cards">
+                <div class="card">
+                    <div class="card-icon">🎮</div>
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>🎮 Video Games</li>
+                        <li>📚 Reading</li>
+                        <li>🎬 Watching Anime</li>
+                        <li>📷 Photography</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>Bachelor of Science in Computer Science</p>
+                </div>
+                <div class="card" style="grid-column: 1 / -1;">
+                    <div class="card-icon">💡</div>
+                    <h3>Who I Am</h3>
+                    <p>Hi, I'm Jayson B. Llanes, a Computer Science graduate with experience in hardware troubleshooting, PC building, and basic web development. I've worked in technical support and system monitoring, and I'm eager to apply my skills in hands-on technical roles. I'm passionate about solving complex problems and continuously learning new technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <div class="section-header">
+            <div class="section-subtitle">Explore My</div>
+            <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">📝</div>
+                <h3>HTML</h3>
+                <div class="skill-level">Skilled</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <div class="skill-level">Skilled</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">☕</div>
+                <h3>Java</h3>
+                <div class="skill-level">Skilled</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <div class="skill-level">Basic</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 50%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <div class="skill-level">Basic</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 50%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3>C++</h3>
+                <div class="skill-level">Basic</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 50%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="fade-in">
+        <div class="section-header">
+            <div class="section-subtitle">My Achievements</div>
+            <h2 class="section-title">Certificates</h2>
+        </div>
+        <div class="certificate-slider-container">
+            <button class="slider-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+            
+            <div class="certificate-slider">
+                <div class="certificate-slide active">
+                    <div class="certificate-image">
+                        <img src="assets/certificate1.jpg" alt="Certificate 1" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/ffffff?text=Certificate+1'">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Certificate Title 1</h3>
+                        <p class="certificate-issuer"></p>
+                        <p class="certificate-date"> </p>
+                    </div>
+                </div>
+
+                <div class="certificate-slide">
+                    <div class="certificate-image">
+                        <img src="assets/certificate2.jpg" alt="Certificate 2" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/ffffff?text=Certificate+2'">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Certificate Title 2</h3>
+                        <p class="certificate-issuer"></p>
+                        <p class="certificate-date"></p>
+                    </div>
+                </div>
+
+                <div class="certificate-slide">
+                    <div class="certificate-image">
+                        <img src="assets/certificate3.jpg" alt="Certificate 3" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/ffffff?text=Certificate+3'">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Certificate Title 3</h3>
+                        <p class="certificate-issuer"></p>
+                        <p class="certificate-date"></p>
+                    </div>
+                </div>
+
+                <div class="certificate-slide">
+                    <div class="certificate-image">
+                        <img src="assets/certificate4.jpg" alt="Certificate 4" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/ffffff?text=Certificate+4'">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Certificate Title 4</h3>
+                        <p class="certificate-issuer"></p>
+                        <p class="certificate-date"></p>
+                    </div>
+                </div>
+
+                <div class="certificate-slide">
+                    <div class="certificate-image">
+                        <img src="assets/certificate5.jpg" alt="Certificate 5" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/ffffff?text=Certificate+5'">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Certificate Title 5</h3>
+                        <p class="certificate-issuer"></p>
+                        <p class="certificate-date"></p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="section-header">
+            <div class="section-subtitle">Get in Touch</div>
+            <h2 class="section-title">Contact Me</h2>
+        </div>
+        <div class="contact-content">
+            <p style="color: var(--text-dim); margin-bottom: 2rem;">
+                Feel free to reach out for collaborations, opportunities, or just to say hi!
+            </p>
+            <div class="contact-cards">
+                <a href="mailto:jayron097@gmail.com" class="contact-card">
+                    <img src="assets/email.png" alt="Email Icon" class="contact-icon">
+                    <h3>Email</h3>
+                    <p>jayron097@gmail.com</p>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100037843673162" target="_blank" class="contact-card">
+                    <img src="assets/FB.png" alt="Facebook Icon" class="contact-icon">
+                    <h3>Facebook</h3>
+                    <p>Connect with me</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p style="color: var(--text-dim);">&copy; 2025 Jayson Llanes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
